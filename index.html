@@ -1,0 +1,154 @@
+ <!-- Author: Sinead Breagy, Student no: x23290501  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Scoot-Easy | Scoot Home</title>
+
+ <!-- link to bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="container" id="navcontainer">
+            <!-- logo author:Sinead Breagy, Canva -->
+            <div class="logo logoimg">
+                <a href="index.html"><img src="Images/scoot-easy logo white 2.png" class="object-fit-scale" alt="Logo"></a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="rent.html">RENT</a>
+                <a href="location.html">LOCATION</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+
+    <header>
+        <!-- All images from www.pexels.com-->
+        <div class="container" img src="Images/scooter3.jpg">
+            <h1>TRANSPORT MADE EASY</h1>
+            <p>Say goodbye to urban mobility headaches with Scoot-Easy! Our bikes are strategically stationed across a multitude of cities for your convenience. Just open up our app, pinpoint the nearest ride with a tap, unlock, and zip off hassle-free! Hop on, Scoot-Easy.</p>
+            <!-- Yellow button -->
+            <a href="rent.html" class="yellow-button">GET SCOOTIN</a>
+        </div>
+    </header>
+
+
+
+    <!-- How It Works Section -->
+    <div class="how-it-works">
+        <div class="container">
+            <h2>HOW IT WORKS</h2>
+            
+            <!-- Circle sections -->
+            <div class="circle-sections">
+                <div class="circle">
+                    <img src="Images/map.jpg" alt="map image">
+                    <h3>LOCATE</h3>
+                    <p>Open the app to locate your closest scooter. 
+                        We place scooters in high demand areas, so one will never be too far away! </p>
+                </div>
+    
+                <div class="circle">
+                    <img src="Images/usephone.jpg" alt="person using phone image">
+                    <h3>PICK UP</h3>
+                    <p>Once you’ve found the nearest scooter, simply select it on the map and use easy-pay 
+                        on the app to receive your code to unlock it!</p>
+                </div>
+    
+                <div class="circle">
+                    <img src="Images/scooter3.jpg" alt="riding scooter image">
+                    <h3>SCOOT-EASY</h3>
+                    <p>All that’s left is to Scoot-Easy! 
+                        When returning the scooter simple park it up and let us know on the app the bike is available for the next user.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Use Scoot-Easy Section -->
+    <div class="why-use-scoot-easy">
+        <div class="container">
+            <h2>WHY USE SCOOT-EASY?</h2>
+            
+            <!-- Circle sections -->
+            <div class="circle-sections">
+                <div class="circle">
+                    <img src="Images/usephone2.jpg" alt="using phone image">
+                    <h3>EASY TO USE</h3>
+                    <p>View everything in the app.</p>
+                    <!-- Blue button -->
+                    <a href="about.html" class="blue-button">Learn More</a>
+                </div>
+    
+                <div class="circle">
+                    <img src="Images/map2.jpg" alt="map image">
+                    <h3>MULTIPLE LOCATIONS</h3>
+                    <p>Available in multiple cities.</p>
+                    <!-- Blue button -->
+                    <a href="about.html" class="blue-button">Learn More</a>
+                </div>
+    
+                <div class="circle">
+                    <img src="Images/money.jpg" alt="money image">
+                    <h3>ZERO HASSLE PAYMENT</h3>
+                    <p>Payment as simple as 1, 2,3.</p>
+                    <!-- Blue button -->
+                    <a href="about.html" class="blue-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" id="footer">
+            <!-- Footer logo -->
+            <div class="logo">
+                <img src="Images/scoot-easy logo navy.png" alt="Footer Logo">
+            </div>
+            <!-- Copyright text -->
+            <p>&copy; Copyright 2024. All rights reserved</p>
+        </div>
+    </footer>
+
+<script>
+        // JavaScript code to manipulate HTML
+
+        document.querySelector('.circle-sections').addEventListener('click', function(event) {
+            if (event.target.tagName === 'IMG') {
+                alert('You clicked on an image!');
+            }
+        });
+    </script>
+
+</body>
+</html>

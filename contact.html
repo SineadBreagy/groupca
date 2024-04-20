@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <nav>
+        <div class="container" id="navcontainer">
+            <div class="logo logoimg">
+                <a href="index.html"><img src="Images/scoot-easy logo white 2.png" class="object-fit-scale" alt="Logo"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="about.html">ABOUT</a>
+                <a href="rent.html">RENT</a>
+                <a href="location.html">LOCATION</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form for general queries -->
+    <section class="contact-page">
+        <div class="container">
+            <h2>Contact Us with any query you have</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" name="age" min="18" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-select" id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-Binary">Non-Binary</option>
+                        <option value="Prefer not to say">Prefer Not to say</option>
+                    </select>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="subscribe" name="subscribe">
+                    <label class="form-check-label" for="subscribe">Subscribe to our newsletter for new model updates!</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="radio" class="form-check-input" id="firstTimeCustomer" name="firstTimeCustomer" value="yes" required>
+                    <label class="form-check-label" for="firstTimeCustomer">First Time Customer</label>
+                    
+                    <div class="mb-3 form-check">
+                    <input type="radio" class="form-check-input" id="alreadyacustomer" name="alreadyacustomer" value="yes" required>
+                    <label class="form-check-label" for="alreadyacustomer">Already a customer</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container" id="footer">
+            <!-- Footer logo -->
+            <div class="logo">
+                <img src="Images/scoot-easy logo navy.png" alt="Footer Logo">
+            </div>
+            <!-- Copyright text -->
+            <p>&copy; Copyright 2024. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var name = document.forms["contactForm"]["name"].value;
+            var email = document.forms["contactForm"]["email"].value;
+            var phone = document.forms["contactForm"]["phone"].value;
+            var message = document.forms["contactForm"]["message"].value;
+            var age = document.forms["contactForm"]["age"].value;
+            var gender = document.forms["contactForm"]["gender"].value;
+
+            // Validate name, email, phone, message, age, gender
+            // You can customize the validation rules as needed
+
+            return false; // Returning false to prevent form submission for demonstration
+        }
+    </script>
+</body>
+</html>

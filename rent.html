@@ -1,0 +1,184 @@
+<!-- Author: Sinead Breagy, Student no: x23290501  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Scoot-Easy | Scoot Rent</title>
+
+ <!-- Link to bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+  <nav>
+    <div class="container" id="navcontainer">
+        <div class="logo logoimg">
+            <a href="index.html"><img src="Images/scoot-easy logo white 2.png" class="object-fit-scale" alt="Logo"></a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="rent.html">RENT</a>
+            <a href="location.html">LOCATION</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Header -->
+<!-- All images from www.pexels.com-->
+   <!-- Rent a Scooter Section -->
+    <header>
+        <div class="container">
+        <h2>Rent a Scooter</h2>
+        <p>Select from the scooters below.</p>
+        </div>
+
+    </header>
+
+<!-- Scooter Details Section -->
+
+<!-- Filter Controls -->
+<div class="filter-controls">
+    <label for="battery-life">Battery Life:</label>
+    <select id="battery-life">
+        <option value="">Any</option>
+        <option value="4">4 hours</option>
+        <option value="5">5 hours</option>
+        <option value="6">6 hours</option>
+    </select>
+    <label for="max-riders">Max Riders:</label>
+    <select id="max-riders">
+        <option value="">Any</option>
+        <option value="1">1 person</option>
+        <option value="2">2 persons</option>
+    </select>
+    <label for="scooter-type">Scooter Type:</label>
+    <select id="scooter-type">
+        <option value="">Any</option>
+        <option value="single">Single scoot</option>
+        <option value="eco">EcoScooter</option>
+        <option value="adventure">Adventure Scoot</option>
+        <option value="e-scoot">E-Scoot</option>
+    </select>
+</div>
+
+<section class="scooter-details">
+    <div class="container">
+        <!-- Single Scooter Box -->
+        <div class="scooter-box" data-battery-life="4" data-max-riders="1" data-scooter-type="single">
+            <!-- Scooter details -->
+            <img src="Images/scooter15.jpg" alt="Scooter 1">
+            <div class="scooter-info">
+                <h3>Single scoot</h3>
+                <p>Battery life 4 hours. Best for travelling to and from single destinations ie. work, meeting friends. 1 person max.</p>
+                <a href="location.html" class="find-on-map-button">Find on Map</a>
+            </div>
+        </div>
+
+        <!-- EcoScooter Box -->
+        <div class="scooter-box" data-battery-life="5" data-max-riders="1" data-scooter-type="eco">
+            <!-- Scooter details -->
+            <img src="Images/scooter15.jpg" alt="Scooter 1">
+            <div class="scooter-info">
+                <h3>EcoScooter</h3>
+                <p>Battery life 5 hours. Best for eco-conscious riders and short commutes. 1 person max.</p>
+                <a href="location.html" class="find-on-map-button">Find on Map</a>
+            </div>
+        </div>
+
+        <!-- Adventure Scooter Box -->
+        <div class="scooter-box" data-battery-life="6" data-max-riders="2" data-scooter-type="adventure">
+            <!-- Scooter details -->
+            <img src="Images/scooter15.jpg" alt="Scooter 1">
+            <div class="scooter-info">
+                <h3>Adventure Scoot</h3>
+                <p>Battery life 6 hours. Best for sight-seeing and all-day use. 2 person max.</p>
+                <a href="location.html" class="find-on-map-button">Find on Map</a>
+            </div>
+        </div>
+
+        <!-- E-Scoot Box -->
+        <div class="scooter-box" data-battery-life="6" data-max-riders="2" data-scooter-type="e-scoot">
+            <!-- Scooter details -->
+            <img src="Images/scooter15.jpg" alt="Scooter 1">
+            <div class="scooter-info">
+                <h3>E-Scoot</h3>
+                <p>Best for outdoor adventures and long-distance travel. 2 person max.</p>
+                <a href="location.html" class="find-on-map-button">Find on Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" id="footer">
+            <!-- Footer logo -->
+            <div class="logo">
+                <img src="Images/scoot-easy logo navy.png" alt="Footer Logo">
+            </div>
+            <!-- Copyright text -->
+            <p>&copy; Copyright 2024. All rights reserved</p>
+        </div>
+    </footer>
+
+   <!-- JavaScript code for interactive filtering -->
+<script>
+    // Function to filter scooters based on selected criteria
+    function filterScooters() {
+        const batteryLifeFilter = document.getElementById("battery-life").value;
+        const maxRidersFilter = document.getElementById("max-riders").value;
+        const scooterTypeFilter = document.getElementById("scooter-type").value;
+
+        // Loop through each scooter element and check if it matches the selected criteria
+        const scooterElements = document.querySelectorAll(".scooter-box");
+        scooterElements.forEach(function(scooterElement) {
+            const batteryLife = scooterElement.dataset.batteryLife;
+            const maxRiders = scooterElement.dataset.maxRiders;
+            const scooterType = scooterElement.dataset.scooterType;
+
+            // Show or hide scooter based on selected criteria
+            if ((batteryLifeFilter === "" || batteryLife === batteryLifeFilter) &&
+                (maxRidersFilter === "" || maxRiders === maxRidersFilter) &&
+                (scooterTypeFilter === "" || scooterType === scooterTypeFilter)) {
+                scooterElement.style.display = "block"; // Show scooter
+            } else {
+                scooterElement.style.display = "none"; // Hide scooter
+            }
+        });
+    }
+
+    // Add event listeners to filter controls
+    document.getElementById("battery-life").addEventListener("change", filterScooters);
+    document.getElementById("max-riders").addEventListener("change", filterScooters);
+    document.getElementById("scooter-type").addEventListener("change", filterScooters);
+</script>
+
+
+</body>
+</html>
